@@ -1,4 +1,4 @@
-# SwaggerClient::SupportedPaymentMethodsApi
+# CashFlowsApi::SupportedPaymentMethodsApi
 
 All URIs are relative to *https://gateway.cashflows.com/payment-gateway-api*
 
@@ -14,24 +14,24 @@ Retrieve supported payment methods
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'CashFlowsApi'
 
-api_instance = SwaggerClient::SupportedPaymentMethodsApi.new
+api_instance = CashFlowsApi::SupportedPaymentMethodsApi.new
 opts = { 
   configuration_id: 'configuration_id_example', # String | 
   hash: 'hash_example', # String | 
   collect_amount: 1.2, # Float | 
-  currency: SwaggerClient::Currency.new, # Currency | 
+  currency: CashFlowsApi::Currency.new, # Currency | 
   all: true, # BOOLEAN | 
   customer_reference: 789, # Integer | 
-  locale: SwaggerClient::Locale.new # Locale | 
+  locale: CashFlowsApi::Locale.new # Locale | 
 }
 
 begin
   #Retrieve supported payment methods
   result = api_instance.api_gateway_supported_payment_methods_get(opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue CashFlowsApi::ApiError => e
   puts "Exception when calling SupportedPaymentMethodsApi->api_gateway_supported_payment_methods_get: #{e}"
 end
 ```

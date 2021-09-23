@@ -1,4 +1,4 @@
-# SwaggerClient::RecurrenceCriteria
+# CashFlowsApi::RecurrenceCriteria
 
 ## Properties
 Name | Type | Description | Notes

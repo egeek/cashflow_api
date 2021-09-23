@@ -1,4 +1,4 @@
-# SwaggerClient::Order
+# CashFlowsApi::Order
 
 ## Properties
 Name | Type | Description | Notes

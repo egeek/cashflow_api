@@ -1,4 +1,4 @@
-# SwaggerClient::Links
+# CashFlowsApi::Links
 
 ## Properties
 Name | Type | Description | Notes

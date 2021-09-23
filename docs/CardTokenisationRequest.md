@@ -1,4 +1,4 @@
-# SwaggerClient::CardTokenisationRequest
+# CashFlowsApi::CardTokenisationRequest
 
 ## Properties
 Name | Type | Description | Notes

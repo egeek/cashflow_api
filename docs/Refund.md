@@ -1,4 +1,4 @@
-# SwaggerClient::Refund
+# CashFlowsApi::Refund
 
 ## Properties
 Name | Type | Description | Notes

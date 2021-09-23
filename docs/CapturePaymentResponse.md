@@ -1,4 +1,4 @@
-# SwaggerClient::CapturePaymentResponse
+# CashFlowsApi::CapturePaymentResponse
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# SwaggerClient::SupportedPaymentMethodsResponse
+# CashFlowsApi::SupportedPaymentMethodsResponse
 
 ## Properties
 Name | Type | Description | Notes

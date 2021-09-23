@@ -1,4 +1,4 @@
-# SwaggerClient::AbuseReport
+# CashFlowsApi::AbuseReport
 
 ## Properties
 Name | Type | Description | Notes

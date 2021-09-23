@@ -1,4 +1,4 @@
-# SwaggerClient::PaymentStatus
+# CashFlowsApi::PaymentStatus
 
 ## Properties
 Name | Type | Description | Notes

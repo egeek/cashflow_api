@@ -1,4 +1,4 @@
-# SwaggerClient::UpdateOrderRequest
+# CashFlowsApi::UpdateOrderRequest
 
 ## Properties
 Name | Type | Description | Notes

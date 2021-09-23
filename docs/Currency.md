@@ -1,4 +1,4 @@
-# SwaggerClient::Currency
+# CashFlowsApi::Currency
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# SwaggerClient::Entry
+# CashFlowsApi::Entry
 
 ## Properties
 Name | Type | Description | Notes

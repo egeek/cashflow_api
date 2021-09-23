@@ -1,4 +1,4 @@
-# SwaggerClient::PaymentJobAttributes
+# CashFlowsApi::PaymentJobAttributes
 
 ## Properties
 Name | Type | Description | Notes

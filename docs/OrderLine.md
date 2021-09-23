@@ -1,4 +1,4 @@
-# SwaggerClient::OrderLine
+# CashFlowsApi::OrderLine
 
 ## Properties
 Name | Type | Description | Notes

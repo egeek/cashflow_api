@@ -1,4 +1,4 @@
-# SwaggerClient::CaptureAttributes
+# CashFlowsApi::CaptureAttributes
 
 ## Properties
 Name | Type | Description | Notes

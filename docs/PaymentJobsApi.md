@@ -1,4 +1,4 @@
-# SwaggerClient::PaymentJobsApi
+# CashFlowsApi::PaymentJobsApi
 
 All URIs are relative to *https://gateway.cashflows.com/payment-gateway-api*
 
@@ -20,21 +20,21 @@ Cancels a payment job.
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'CashFlowsApi'
 
-api_instance = SwaggerClient::PaymentJobsApi.new
+api_instance = CashFlowsApi::PaymentJobsApi.new
 payment_job_reference = 789 # Integer | The reference of the payment job to cancel.
 opts = { 
   configuration_id: 'configuration_id_example', # String | Your configuration ID.
   hash: 'hash_example', # String | A hexadecimal sha512 hash of your password.
-  locale: SwaggerClient::Locale.new # Locale | The locale to translate errors and warnings to.
+  locale: CashFlowsApi::Locale.new # Locale | The locale to translate errors and warnings to.
 }
 
 begin
   #Cancels a payment job.
   result = api_instance.api_gateway_payment_jobs_payment_job_reference_cancel_patch(payment_job_reference, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue CashFlowsApi::ApiError => e
   puts "Exception when calling PaymentJobsApi->api_gateway_payment_jobs_payment_job_reference_cancel_patch: #{e}"
 end
 ```
@@ -71,21 +71,21 @@ Retrieves a payment job.
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'CashFlowsApi'
 
-api_instance = SwaggerClient::PaymentJobsApi.new
+api_instance = CashFlowsApi::PaymentJobsApi.new
 payment_job_reference = 789 # Integer | The reference of the payment job to retrieve.
 opts = { 
   configuration_id: 'configuration_id_example', # String | Your configuration ID.
   hash: 'hash_example', # String | A hexadecimal sha512 hash of your password.
-  locale: SwaggerClient::Locale.new # Locale | The locale to translate errors and warnings to.
+  locale: CashFlowsApi::Locale.new # Locale | The locale to translate errors and warnings to.
 }
 
 begin
   #Retrieves a payment job.
   result = api_instance.api_gateway_payment_jobs_payment_job_reference_get(payment_job_reference, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue CashFlowsApi::ApiError => e
   puts "Exception when calling PaymentJobsApi->api_gateway_payment_jobs_payment_job_reference_get: #{e}"
 end
 ```
@@ -122,22 +122,22 @@ Cancels a payment.
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'CashFlowsApi'
 
-api_instance = SwaggerClient::PaymentJobsApi.new
+api_instance = CashFlowsApi::PaymentJobsApi.new
 payment_job_reference = 789 # Integer | The reference of the payment job which payment to cancel.
 payment_reference = 789 # Integer | The reference of the payment to cancel.
 opts = { 
   configuration_id: 'configuration_id_example', # String | Your configuration ID.
   hash: 'hash_example', # String | A hexadecimal sha512 hash of your password.
-  locale: SwaggerClient::Locale.new # Locale | The locale to translate errors and warnings to.
+  locale: CashFlowsApi::Locale.new # Locale | The locale to translate errors and warnings to.
 }
 
 begin
   #Cancels a payment.
   result = api_instance.api_gateway_payment_jobs_payment_job_reference_payments_payment_reference_cancel_patch(payment_job_reference, payment_reference, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue CashFlowsApi::ApiError => e
   puts "Exception when calling PaymentJobsApi->api_gateway_payment_jobs_payment_job_reference_payments_payment_reference_cancel_patch: #{e}"
 end
 ```
@@ -175,23 +175,23 @@ Creates a capture for a payment.
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'CashFlowsApi'
 
-api_instance = SwaggerClient::PaymentJobsApi.new
+api_instance = CashFlowsApi::PaymentJobsApi.new
 payment_job_reference = 789 # Integer | The reference of the payment job which payment to capture.
 payment_reference = 789 # Integer | The reference of the payment to create a capture for.
 opts = { 
-  body: SwaggerClient::CapturePaymentRequest.new # CapturePaymentRequest | 
+  body: CashFlowsApi::CapturePaymentRequest.new # CapturePaymentRequest | 
   configuration_id: 'configuration_id_example' # String | Your configuration ID.
   hash: 'hash_example' # String | A hexadecimal sha512 hash of your password + the body.
-  locale: SwaggerClient::Locale.new # Locale | The locale to translate errors and warnings to.
+  locale: CashFlowsApi::Locale.new # Locale | The locale to translate errors and warnings to.
 }
 
 begin
   #Creates a capture for a payment.
   result = api_instance.api_gateway_payment_jobs_payment_job_reference_payments_payment_reference_captures_post(payment_job_referencepayment_reference, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue CashFlowsApi::ApiError => e
   puts "Exception when calling PaymentJobsApi->api_gateway_payment_jobs_payment_job_reference_payments_payment_reference_captures_post: #{e}"
 end
 ```
@@ -230,22 +230,22 @@ Retrieves a payment.
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'CashFlowsApi'
 
-api_instance = SwaggerClient::PaymentJobsApi.new
+api_instance = CashFlowsApi::PaymentJobsApi.new
 payment_job_reference = 789 # Integer | The reference of the payment job which payment to retrieve.
 payment_reference = 789 # Integer | The reference of the payment to retrieve.
 opts = { 
   configuration_id: 'configuration_id_example', # String | Your configuration ID.
   hash: 'hash_example', # String | A hexadecimal sha512 hash of your password.
-  locale: SwaggerClient::Locale.new # Locale | The locale to translate errors and warnings to.
+  locale: CashFlowsApi::Locale.new # Locale | The locale to translate errors and warnings to.
 }
 
 begin
   #Retrieves a payment.
   result = api_instance.api_gateway_payment_jobs_payment_job_reference_payments_payment_reference_get(payment_job_reference, payment_reference, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue CashFlowsApi::ApiError => e
   puts "Exception when calling PaymentJobsApi->api_gateway_payment_jobs_payment_job_reference_payments_payment_reference_get: #{e}"
 end
 ```
@@ -283,23 +283,23 @@ Creates a refund for a payment.
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'CashFlowsApi'
 
-api_instance = SwaggerClient::PaymentJobsApi.new
+api_instance = CashFlowsApi::PaymentJobsApi.new
 payment_job_reference = 789 # Integer | The reference of the payment job which payment to refund.
 payment_reference = 789 # Integer | The reference of the payment to create a refund for.
 opts = { 
-  body: SwaggerClient::RefundPaymentRequest.new # RefundPaymentRequest | 
+  body: CashFlowsApi::RefundPaymentRequest.new # RefundPaymentRequest | 
   configuration_id: 'configuration_id_example' # String | Your configuration ID.
   hash: 'hash_example' # String | A hexadecimal sha512 hash of your password + the body.
-  locale: SwaggerClient::Locale.new # Locale | The locale to translate errors and warnings to.
+  locale: CashFlowsApi::Locale.new # Locale | The locale to translate errors and warnings to.
 }
 
 begin
   #Creates a refund for a payment.
   result = api_instance.api_gateway_payment_jobs_payment_job_reference_payments_payment_reference_refunds_post(payment_job_referencepayment_reference, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue CashFlowsApi::ApiError => e
   puts "Exception when calling PaymentJobsApi->api_gateway_payment_jobs_payment_job_reference_payments_payment_reference_refunds_post: #{e}"
 end
 ```
@@ -338,21 +338,21 @@ Creates a new payment job.
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'CashFlowsApi'
 
-api_instance = SwaggerClient::PaymentJobsApi.new
+api_instance = CashFlowsApi::PaymentJobsApi.new
 opts = { 
-  body: SwaggerClient::CreatePaymentJobRequest.new # CreatePaymentJobRequest | 
+  body: CashFlowsApi::CreatePaymentJobRequest.new # CreatePaymentJobRequest | 
   configuration_id: 'configuration_id_example' # String | Your configuration ID.
   hash: 'hash_example' # String | A hexadecimal sha512 hash of your password + the body.
-  locale: SwaggerClient::Locale.new # Locale | The locale to translate errors and warnings to.
+  locale: CashFlowsApi::Locale.new # Locale | The locale to translate errors and warnings to.
 }
 
 begin
   #Creates a new payment job.
   result = api_instance.api_gateway_payment_jobs_post(opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue CashFlowsApi::ApiError => e
   puts "Exception when calling PaymentJobsApi->api_gateway_payment_jobs_post: #{e}"
 end
 ```

@@ -1,4 +1,4 @@
-# SwaggerClient::ErrorResponse
+# CashFlowsApi::ErrorResponse
 
 ## Properties
 Name | Type | Description | Notes

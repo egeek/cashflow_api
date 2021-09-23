@@ -11,14 +11,14 @@ Swagger Codegen version: 3.0.28-SNAPSHOT
 
 require 'spec_helper'
 
-describe SwaggerClient::Configuration do
-  let(:config) { SwaggerClient::Configuration.default }
+describe CashFlowsApi::Configuration do
+  let(:config) { CashFlowsApi::Configuration.default }
 
   before(:each) do
     # uncomment below to setup host and base_path
     # require 'URI'
     # uri = URI.parse("https://gateway.cashflows.com/payment-gateway-api")
-    # SwaggerClient.configure do |c|
+    # CashFlowsApi.configure do |c|
     #   c.host = uri.host
     #   c.base_path = uri.path
     # end

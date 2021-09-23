@@ -1,4 +1,4 @@
-# SwaggerClient::RefundStep
+# CashFlowsApi::RefundStep
 
 ## Properties
 Name | Type | Description | Notes

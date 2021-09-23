@@ -1,4 +1,4 @@
-# SwaggerClient::CardTokenisationsApi
+# CashFlowsApi::CardTokenisationsApi
 
 All URIs are relative to *https://gateway.cashflows.com/payment-gateway-api*
 
@@ -14,20 +14,20 @@ Method | HTTP request | Description
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'CashFlowsApi'
 
-api_instance = SwaggerClient::CardTokenisationsApi.new
+api_instance = CashFlowsApi::CardTokenisationsApi.new
 opts = { 
-  body: SwaggerClient::CardTokenisationRequest.new # CardTokenisationRequest | 
+  body: CashFlowsApi::CardTokenisationRequest.new # CardTokenisationRequest | 
   configuration_id: 'configuration_id_example' # String | 
   hash: 'hash_example' # String | 
-  locale: SwaggerClient::Locale.new # Locale | 
+  locale: CashFlowsApi::Locale.new # Locale | 
 }
 
 begin
   result = api_instance.api_gateway_card_tokenisation_post(opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue CashFlowsApi::ApiError => e
   puts "Exception when calling CardTokenisationsApi->api_gateway_card_tokenisation_post: #{e}"
 end
 ```

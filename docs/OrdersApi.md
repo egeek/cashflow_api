@@ -1,4 +1,4 @@
-# SwaggerClient::OrdersApi
+# CashFlowsApi::OrdersApi
 
 All URIs are relative to *https://gateway.cashflows.com/payment-gateway-api*
 
@@ -14,9 +14,9 @@ Checks if the order exists, but does not return it.
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'CashFlowsApi'
 
-api_instance = SwaggerClient::OrdersApi.new
+api_instance = CashFlowsApi::OrdersApi.new
 order_number = 'order_number_example' # String | The number of the order to check.
 configuration_id = 'configuration_id_example' # String | Your configuration ID.
 hash = 'hash_example' # String | A hexadecimal sha512 hash of your password + the body.
@@ -25,7 +25,7 @@ hash = 'hash_example' # String | A hexadecimal sha512 hash of your password + th
 begin
   #Checks if the order exists, but does not return it.
   api_instance.api_gateway_orders_order_number_head(order_number, configuration_id, hash)
-rescue SwaggerClient::ApiError => e
+rescue CashFlowsApi::ApiError => e
   puts "Exception when calling OrdersApi->api_gateway_orders_order_number_head: #{e}"
 end
 ```
